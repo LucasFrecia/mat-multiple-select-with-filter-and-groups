@@ -1,58 +1,4 @@
 <div class="center">
-	<!-- <mat-form-field>
-		<mat-select placeholder="Basic">
-			<mat-select-filter [array]="variables" (filteredReturn)="filteredList1 =$event"></mat-select-filter>
-			<mat-option *ngFor="let item of filteredList1" [value]="item">
-				{{item}}
-			</mat-option>
-		</mat-select>
-	</mat-form-field>
-
-	<br> -->
-	<!-- 
-<mat-form-field>
-	<mat-select [disableOptionCentering]="true" #select1 placeholder="Auto Focus">
-		<mat-select-filter *ngIf="select1.focused" [array]="variables" (filteredReturn)="filteredList2 =$event"></mat-select-filter>
-		<mat-option *ngFor="let item of filteredList2" [value]="item">
-			{{item}}
-		</mat-option>
-	</mat-select>
-</mat-form-field>
-
-<br> -->
-	<!-- 
-<mat-form-field>
-	<mat-select #select2 placeholder="Background color">
-		<mat-select-filter *ngIf="select2.focused" [color]="'#424242'" [array]="variables" (filteredReturn)="filteredList3 =$event"></mat-select-filter>
-		<mat-option *ngFor="let item of filteredList3" [value]="item">
-			{{item}}
-		</mat-option>
-	</mat-select>
-</mat-form-field>
-
-<br> -->
-	<!-- 
-<mat-form-field>
-	<mat-select placeholder="Custom placeholder">
-		<mat-select-filter [placeholder]="'I\'m a input placeholder'" [array]="variables" (filteredReturn)="filteredList4 =$event"></mat-select-filter>
-		<mat-option *ngFor="let item of filteredList4" [value]="item">
-			{{item}}
-		</mat-option>
-	</mat-select>
-</mat-form-field>
-
-<br> -->
-	<!-- 
-<mat-form-field>
-	<mat-select placeholder="Using array of objects">
-		<mat-select-filter [placeholder]="'Filter'" [displayMember]="'name'" [array]="variables2" (filteredReturn)="filteredList5 =$event"></mat-select-filter>
-		<mat-option *ngFor="let item of filteredList5" [value]="item">
-			{{item.name}}
-		</mat-option>
-	</mat-select>
-</mat-form-field>
-<br> -->
-
 	<mat-form-field>
 		<mat-select #select1 multiple placeholder="Using Groups" [(value)]="selected">
 			<mat-select-filter *ngIf="select1.focused" [placeholder]="'Filtro'" [array]="variablesGroups" hasGroup="true" groupArrayName="values"
@@ -66,8 +12,9 @@
 
 
 		</mat-select>
-	</mat-form-field>
+	</mat-form-field>  
+</div>
 
-  <br>
+<div>
   {{ selected | json }}
 </div>
